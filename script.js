@@ -26,3 +26,63 @@ console.log(titulo);
 
 //document.getElementById("hero");
 //console.log(hero)
+
+//Aula 2
+
+// Ao clicar no botão aparece o texto no console log
+//const botaoSobre = document.getElementById("botao-sobre");
+
+//botaoSobre.addEventListener("click", function () {
+//    console.log("O botão foi clicado!");
+// });
+
+
+//Ao clicar no botão, muda o título do site
+
+//const titulo = document.querySelector("h1");
+//botaoSobre.addEventListener("click", function () {
+//    titulo.textContent = "Obrigada por visitar meu portfólio!";
+//});
+
+//Ao clicar no botão vai para o sobre
+//const sobre = document.getElementById("sobre");
+
+//botaoSobre.addEventListener("click", function () {
+//    sobre.scrollIntoView();
+//});
+
+
+//Muda o texto e vai para o sobre
+//botaoSobre.addEventListener("click", function () {
+
+//   titulo.textContent = "Conheça um pouco mais sobre mim!";
+
+//    sobre.scrollIntoView();
+
+//});
+
+//Não executar a função imediatamente, criando uma função
+
+//function mostrarSobre() {
+//    titulo.textContent = "Conheça um pouco mais sobre mim!";
+//    sobre.scrollIntoView();
+//}
+
+//botaoSobre.addEventListener("click", mostrarSobre);
+
+//Botão habilidades ao clicar vai para sessão habilidades
+//const botaoHabilidades =
+//    document.getElementById("botao-habilidades");
+
+//const habilidades =
+//    document.getElementById("habilidades");
+
+//botaoHabilidades.addEventListener("click", function () {
+//    habilidades.scrollIntoView();
+//});
+
+//Mouseover
+
+//titulo.addEventListener("mouseover", function () {
+//   console.log("Mouse sobre o título!");
+//});
