@@ -1,91 +1,159 @@
-//Aula 1
+/* ========================================
+   ESTILOS DOS ELEMENTOS
+   ======================================== */
 
-//console.log("JavaScript conectado!");
-//console.log("Document");
+h1 {
+    color: #222;
+    font-size: 40px;
+    text-align: center;
+    /*Aula 7
+    font-size: 1rem;*/
+    
+}
 
-//const titulo = document.querySelector("h1");
-//console.log(titulo);
+h2 {
+    color: #333;
+}
 
-//const hero = document.querySelector("#hero");
-//console.log(hero.textContent);
+p {
+    color: #444;
+}
 
-
-//const linkSocial = document.querySelector(".link-social");
-//console.log(link-social);
-//console.log(linkSocial.textContent);
-
-
-//const titulo = document.querySelector("h1");
-//titulo.textContent = "Maria dos Santos | Desenvolvedora Web";
-
-//const hero = document.querySelector("#hero");
-//const apresentacao = hero.querySelector("p");
-//apresentacao.textContent =
-    //"Olá! Sou Maria e estou começando minha jornada no desenvolvimento web.";
-
-//titulo.style.color = "red";
-//hero.style.backgroundColor = "lightblue";
-
-//document.getElementById("hero");
-//console.log(hero)
-
-///////////////////////////////////////////////////////////////////////////////////////////
-//Aula 2
-
-// Ao clicar no botão aparece o texto no console log
-//const botaoSobre = document.getElementById("botao-sobre");
-
-//botaoSobre.addEventListener("click", function () {
-//    console.log("O botão foi clicado!");
-// });
+a {
+    color: #333;
+    text-decoration: none;
+}
 
 
-//Ao clicar no botão, muda o título do site
+/* ========================================
+   CLASSE
+   ======================================== */
 
-//const titulo = document.querySelector("h1");
-//botaoSobre.addEventListener("click", function () {
-//    titulo.textContent = "Obrigada por visitar meu portfólio!";
-//});
+.cargo {
+    color: #666;
+    font-weight: bold;
+}
 
-//Ao clicar no botão vai para o sobre
-//const sobre = document.getElementById("sobre");
-
-//botaoSobre.addEventListener("click", function () {
-//    sobre.scrollIntoView();
-//});
+.link-social {
+    color: #333;
+    text-decoration: none;
+}
 
 
-//Muda o texto e vai para o sobre
-//botaoSobre.addEventListener("click", function () {
+/* ========================================
+   SEÇÕES
+   ======================================== */
 
-//   titulo.textContent = "Conheça um pouco mais sobre mim!";
+#hero {
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: #e8f4f8;
+}
 
-//    sobre.scrollIntoView();
+#hero img {
+    width: 300px;
+    height: auto;
 
-//});
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 
-//Não executar a função imediatamente, criando uma função
+* {
+    box-sizing: border-box;
+}
 
-//function mostrarSobre() {
-//    titulo.textContent = "Conheça um pouco mais sobre mim!";
-//    sobre.scrollIntoView();
-//}
+#sobre {
+    background-color: #f5f5f5;
+}
 
-//botaoSobre.addEventListener("click", mostrarSobre);
+#habilidades {
+    background-color: #eeeeee;
+}
 
-//Botão habilidades ao clicar vai para sessão habilidades
-//const botaoHabilidades =
-//    document.getElementById("botao-habilidades");
+#projetos {
+    background-color: #f5f5f5;
+}
 
-//const habilidades =
-//    document.getElementById("habilidades");
+#contato {
+    background-color: #e8f4f8;
+}
 
-//botaoHabilidades.addEventListener("click", function () {
-//    habilidades.scrollIntoView();
-//});
 
-//Mouseover
+/* ========================================
+   RODAPÉ
+   ======================================== */
 
-//titulo.addEventListener("mouseover", function () {
-//   console.log("Mouse sobre o título!");
-//});
+footer {
+    background-color: #222;
+}
+
+footer p {
+    color: white;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+     .projetos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+.destaque {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
