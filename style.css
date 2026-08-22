@@ -2,13 +2,18 @@
    ESTILOS DOS ELEMENTOS
    ======================================== */
 
+.arima-<uniquifier> {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 h1 {
     color: #222;
     font-size: 40px;
     text-align: center;
-    /*Aula 7
-    font-size: 1rem;*/
-    
+ 
 }
 
 h2 {
@@ -16,7 +21,7 @@ h2 {
 }
 
 p {
-    color: #444;
+    color: #333;
 }
 
 a {
@@ -24,13 +29,8 @@ a {
     text-decoration: none;
 }
 
-
-/* ========================================
-   CLASSE
-   ======================================== */
-
 .cargo {
-    color: #666;
+    color: #222;
     font-weight: bold;
 }
 
@@ -39,65 +39,52 @@ a {
     text-decoration: none;
 }
 
-
-/* ========================================
-   SEÇÕES
-   ======================================== */
-
 #hero {
     padding: 30px;
     margin: 20px;
-    border: 2px solid black;
-    background-color: #e8f4f8;
 }
 
-#hero img {
+//#hero img {
     width: 300px;
-    height: auto;
-
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
 }
+\\
 
 * {
     box-sizing: border-box;
 }
 
 #sobre {
-    background-color: #f5f5f5;
+    background-color: #;
 }
 
 #habilidades {
-    background-color: #eeeeee;
+    background-color: #;
 }
 
 #projetos {
-    background-color: #f5f5f5;
+    background-color: #;
 }
 
 #contato {
-    background-color: #e8f4f8;
+    background-color: #;
 }
 
-
-/* ========================================
-   RODAPÉ
-   ======================================== */
+\\
 
 footer {
     background-color: #222;
 }
 
 footer p {
-    color: white;
+    color: #222;
 }
 
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'arima', sans-serif;
 }
-
 
 header {
     display: flex;
@@ -109,7 +96,6 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
 
 nav {
     display: flex;
@@ -132,8 +118,6 @@ nav {
     gap: 20px;
 }
 
-
-
 @media (min-width: 768px) {
 
     nav {
@@ -154,6 +138,6 @@ nav {
 }
 
 .destaque {
-    background-color: #f5f5f5;
+    background-color: #;
     padding: 20px;
 }
